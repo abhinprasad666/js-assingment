@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-color: rgb(41, 196, 196);">
+
+    <!-- -->
+    <!--   -->
+
+    <div class="qus-btns">
+        <div class="qus-btns">
+   
+            <button><a href="index.html">Question-1</a></button>
+            <button><a href="qus-2.html">Question-2</a></button>
+            <button><a href="qus-3.html">Question-3</a></button>
+            <button><a href="qus-4.html">Question-4</a></button>
+        </div>
+    <center>
+        <h2>question-2 </h2>
+        <p>Write a JavaScript program to change the  color given text in p tag</p>
+<h1 id="head" style="margin: 200px;"> Welcome to J.S
+</h1> 
+
+ 
+<select id="color-slct">
+    <option value="red">red</option>
+    <option value="green">green</option>
+    <option value="black">black</option>
+    <option value="blue">blue</option>
+   </select>
+    
+<button id="btn" onclick="change()">change</button>
+    
+</center>
+
+<!-- js -->
+<script>
+   const head=document.getElementById('head')
+const colorSlct=document.getElementById('color-slct')
+const btn=document.getElementById('btn')
+
+function change(){
+    var val=colorSlct.value 
+
+head.style.color=val
+callback()
+
+
+}
+
+function callback(){
+    var val=colorSlct.value 
+ alert(`Your are selected:${val}`)
+}
+</script>
+
+</body>
+</html>

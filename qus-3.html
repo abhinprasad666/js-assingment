@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-color: rgb(15, 173, 158);">
+    
+    <div class="qus-btns">
+   
+        <button><a href="index.html">Question-1</a></button>
+        <button><a href="qus-2.html">Question-2</a></button>
+        <button><a href="qus-3.html">Question-3</a></button>
+        <button><a href="qus-4.html">Question-4</a></button>
+    </div>
+
+<center>
+    <h2>Question-3</h2>
+    <p>Write a JavaScript function to get the values of First and Last names of the following form.</p>
+    <form id="form">
+        <input id="fname" type="text" name="fname" value="David"><br>
+         <input id="lname" type="text" name="lname" value="Beckham"><br>
+        <input type="submit" value="Submit" onclick="change()">
+    </form>
+
+</center>
+
+<!-- js -->
+
+<script>
+document.getElementById("form")
+    const fName = document.getElementById("fname").value;
+    const lName = document.getElementById("lname").value;
+ 
+function change(){
+    const fullname=fName+lName
+    alert(fullname)
+
+}
+
+</script>
+
+
+
+
+
+
+</body>
+</html>

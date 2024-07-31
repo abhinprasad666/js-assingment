@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-color: rgb(41, 196, 196);">
+
+    <div class="qus-btns">
+   
+        <button><a href="index.html">Question-1</a></button>
+        <button><a href="qus-2.html">Question-2</a></button>
+        <button><a href="qus-3.html">Question-3</a></button>
+        <button><a href="qus-4.html">Question-4</a></button>
+    </div>
+    
+  <center>
+    <h1>question-1</h1> 
+    <p>1. Write a JavaScript program to remove items from a drop-down list.</p>
+
+<select name="" id="color-slct"> 
+
+<option value="red">red</option>
+<option value="green">green</option>
+<option value="black">black</option>
+<option value="blue">blue</option>
+</select>
+
+<button id="remove-btn" onclick="dlt()">remove</button>
+
+
+</center>
+
+
+
+
+<!-- js -->
+    <script>
+       
+       
+const box=document.getElementById('box')
+const btn=document.getElementById('remove-btn')
+const colorOptn=document.getElementById('color-slct')
+
+colorOptn.style.padding='10px'
+btn.style.padding='10px'
+btn.style.backgroundColor='#ed3a1a'
+btn.style.color='white'
+
+function dlt(){
+
+colorOptn.remove(colorOptn.selectedIndex)
+
+
+}
+    </script>
+    
+</body>
+</html>
